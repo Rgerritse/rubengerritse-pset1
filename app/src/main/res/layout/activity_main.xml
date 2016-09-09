@@ -23,7 +23,9 @@
             android:layout_height="wrap_content"
             android:text="@string/title"
             android:id="@+id/text"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -114,6 +116,7 @@
         android:layout_weight="1">
 
         <TextView
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Check/Uncheck the boxes to add/remove parts"
