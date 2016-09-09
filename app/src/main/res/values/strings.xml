@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">rubengerritse-pset1</string>
+    <string name="title">Mr. Potato Head</string>s
+    <string name="arms">arms</string>
 </resources>
