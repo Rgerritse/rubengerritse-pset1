@@ -18,7 +18,7 @@
         android:layout_weight="1">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/title"
             android:id="@+id/text"
@@ -106,60 +106,73 @@
         </RelativeLayout>
     </LinearLayout>
 
-    <GridLayout
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="1"
-        android:columnCount="2">
+        android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/arms_checkbox"
-            android:text="@string/arms"
-            android:onClick="onClickArmsCheckbox"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Check/Uncheck the boxes to add/remove parts"
+            android:gravity="center"/>
 
-        <CheckBox
-            android:id="@+id/ears_checkbox"
-            android:text="@string/ears"
-            android:onClick="onClickEarsCheckbox"/>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:columnCount="2"
+            android:layout_gravity="center">
 
-        <CheckBox
-            android:id="@+id/eyesbrows_checkbox"
-            android:text="@string/eyebrows"
-            android:onClick="onClickEyebrowsCheckbox"/>
+            <CheckBox
+                android:id="@+id/arms_checkbox"
+                android:text="@string/arms"
+                android:onClick="onClickArmsCheckbox"/>
 
-        <CheckBox
-            android:id="@+id/eyes_checkbox"
-            android:text="@string/eyes"
-            android:onClick="onClickEyesCheckbox"/>
+            <CheckBox
+                android:id="@+id/ears_checkbox"
+                android:text="@string/ears"
+                android:onClick="onClickEarsCheckbox"/>
 
-        <CheckBox
-            android:id="@+id/glasses_checkbox"
-            android:text="@string/glasses"
-            android:onClick="onClickGlassesCheckbox"/>
+            <CheckBox
+                android:id="@+id/eyesbrows_checkbox"
+                android:text="@string/eyebrows"
+                android:onClick="onClickEyebrowsCheckbox"/>
 
-        <CheckBox
-            android:id="@+id/hat_checkbox"
-            android:text="@string/hat"
-            android:onClick="onClickHatCheckbox"/>
+            <CheckBox
+                android:id="@+id/eyes_checkbox"
+                android:text="@string/eyes"
+                android:onClick="onClickEyesCheckbox"/>
 
-        <CheckBox
-            android:id="@+id/mouth_checkbox"
-            android:text="@string/mouth"
-            android:onClick="onClickMouthCheckbox"/>
+            <CheckBox
+                android:id="@+id/glasses_checkbox"
+                android:text="@string/glasses"
+                android:onClick="onClickGlassesCheckbox"/>
 
-        <CheckBox
-            android:id="@+id/mustache_checkbox"
-            android:text="@string/mustache"
-            android:onClick="onClickMustacheCheckbox"/>
+            <CheckBox
+                android:id="@+id/hat_checkbox"
+                android:text="@string/hat"
+                android:onClick="onClickHatCheckbox"/>
 
-        <CheckBox
-            android:id="@+id/nose_checkbox"
-            android:text="@string/nose"
-            android:onClick="onClickNoseCheckbox"/>
+            <CheckBox
+                android:id="@+id/mouth_checkbox"
+                android:text="@string/mouth"
+                android:onClick="onClickMouthCheckbox"/>
 
-        <CheckBox
-            android:id="@+id/shoes_checkbox"
-            android:text="@string/shoes"
-            android:onClick="onClickshoesCheckbox"/>
-    </GridLayout>
+            <CheckBox
+                android:id="@+id/mustache_checkbox"
+                android:text="@string/mustache"
+                android:onClick="onClickMustacheCheckbox"/>
+
+            <CheckBox
+                android:id="@+id/nose_checkbox"
+                android:text="@string/nose"
+                android:onClick="onClickNoseCheckbox"/>
+
+            <CheckBox
+                android:id="@+id/shoes_checkbox"
+                android:text="@string/shoes"
+                android:onClick="onClickshoesCheckbox"/>
+        </GridLayout>
+    </LinearLayout>
 </LinearLayout>
